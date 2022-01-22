@@ -1,0 +1,58 @@
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    position: relative;
+}
+
+.title {
+    background-color: #393939;
+    color: white;
+    min-width: 280px;
+    max-width: 300px;
+    min-height: 180px;
+    max-height: 200px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: block;
+    position: absolute;
+}
+
+.background-image {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 575px;
+    max-height: 600px;
+    object-fit: cover;
+    /*background-position: center;
+    background-size: cover;*/
+}
+
+.sub-nav {
+    min-width: 100%;
+    max-width: 100%;
+    background-color: #393939;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+.sub-nav-text {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.menu-description {
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+}
