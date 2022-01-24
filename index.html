@@ -10,16 +10,16 @@
     </head>
     <body>
         <header>
-            <nav class="pink-card">
-                <a href="index.html"><img class="icons" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"/></a>
-                <h2>nitro</h2>
+            <nav class="pink-bg bottom-pad">
+                <a href="index.html"><img class="icons logo-pad" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"/></a>
+                <h3 class="right-pad">nitro</h3>
                 <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href ="./pages/menu.html">Menu</a></li>
-                    <li><a href ="./pages/menu.html">Shop Now</a></li>
+                    <p><a class="nav-text" href="index.html">About</a></p>
+                    <p><a class="nav-text" href ="./pages/menu.html">Menu</a></p>
+                    <p><a class="nav-text" href ="./pages/menu.html">Shop Now</a></p>
                 </ul>
             </nav>
-            <section class="pink-card">
+            <section class="main-bg pink-bg">
                 <h1>Nitro Coffee</h1>
                 <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 <a href ="./pages/menu.html"><button class="button">SHOP NOW</button></a>
@@ -28,21 +28,23 @@
         </header>
         <section>
             <h2>Our Products</h2>
-            <card>
-                <img src="./assets/images/coffeebeans.png" alt="Coffee Beans">
-                <h3>Coffee Beans</h3>
-                <p class="pricing">$18.99</p>
-            </card>
-            <card>
-                <img src="./assets/images/coldbrew.png" alt="Cold Brew">
-                <h3>Cold Brew</h3>
-                <p class="pricing">$4.99</p>
-            </card>
-            <card>
-                <img src="./assets/images/inhousebrew.png" alt="In-house Brew">
-                <h3>In-house Brew</h3>
-                <p class="pricing">$2.99</p>
-            </card>
+            <div class="product-area">
+                <card class="product-card">
+                    <img class="product-card-image centered" src="./assets/images/coffeebeans.png" alt="Coffee Beans">
+                    <h3>Coffee Beans</h3>
+                    <p class="pricing centered">$18.99</p>
+                </card>
+                <card class="product-card">
+                    <img class="product-card-image" src="./assets/images/coldbrew.png" alt="Cold Brew">
+                    <h3>Cold Brew</h3>
+                    <p class="pricing centered">$4.99</p>
+                </card>
+                <card class="product-card">
+                    <img class="product-card-image" src="./assets/images/inhousebrew.png" alt="In-house Brew">
+                    <h3>In-house Brew</h3>
+                    <p class="pricing centered">$2.99</p>
+                </card>
+            </div>
             <a href ="./pages/menu.html"><button class="button">VIEW ALL</button></a>
         </section>
         
@@ -50,7 +52,7 @@
             <p class="discount">Get 20% off your first order with the code: <span class="bold">FirstNitro</span></p>
         </section>
 
-        <footer class="pink-card">
+        <footer class="pink-bg">
             <div>
                 <h3>Address</h3>
                 <p>503 Broadway Penthouse</p>

@@ -1,3 +1,4 @@
+
 p {
     font-size: 18px;
     font-weight: 400;
@@ -14,30 +15,30 @@ p {
     max-width: 300px;
     min-height: 180px;
     max-height: 200px;
-    top: 0px;
-    left: 0px;
     text-align: center;
-    display: block;
-    position: absolute;
+    margin: 0 auto;
 }
 
 .background-image {
+    background-image: url('../assets/images/coffee-circle.jpg');
     min-width: 100%;
     max-width: 100%;
     min-height: 575px;
     max-height: 600px;
-    object-fit: cover;
-    /*background-position: center;
-    background-size: cover;*/
+    background-size: cover;
+    background-position: center;
 }
 
 .sub-nav {
     min-width: 100%;
     max-width: 100%;
+    min-height: 60px;
+    max-height: 80px;
+    padding: 20px;
     background-color: #393939;
     color: white;
     text-align: center;
-    margin: 0px;
+    box-sizing: border-box;
 }
 
 .sub-nav-text {
@@ -45,14 +46,28 @@ p {
     color:white;
     text-transform: uppercase;
     font-size: 21px;
+    width:100%;
+    border-left: solid 4px #5bacc3;
+    padding: 0 20px;
 }
 
-.centered {
-    text-align: center;
+.sub-nav-text:hover {
+    color: #5bacc3;
 }
 
 .menu-description {
     font-style: italic;
     text-align: center;
-    max-width: 500px;
+    max-width: 50%;
+    padding: 0 25%;
+}
+
+.pink-card {
+    background-color: #FFF0ED;
+    padding-bottom: 20px;
+}
+
+.grey-card {
+    background-color: #F7F7F7;
+    padding-bottom: 20px;
 }
