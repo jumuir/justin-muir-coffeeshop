@@ -31,11 +31,12 @@ p {
 }
 
 .product-area {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .product-card {
+    background-color: white;
+    display: inline-block;
     width: 25%;
     min-width: 330px;
     max-width: 350px;
@@ -51,9 +52,19 @@ p {
 
 .product-card-image {
     object-fit: cover;
+}
+
+.product-card-image-container {
     padding: 20px 0;
     min-height: 240px;
+    width: 50%;
+    margin: auto;
     max-height: 550px;
+}
+
+.product-pricing {
+    color: #5bacc3;
+    font-size: 33px;
 }
 
 .bold {
@@ -62,6 +73,10 @@ p {
 
 .pink-bg {
     background-color: #FFF0ED;
+}
+
+.grey-bg {
+    background-color: #F7F7F7;
 }
 
 .main-bg {
