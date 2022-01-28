@@ -21,20 +21,24 @@
                 </ul>
             </nav>
 
-            <section class="main-bg pink-bg">
-                <h1>Nitro Coffee</h1>
-                <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
-                <input class=button type=button onclick="location.href='./pages/menu.html'" value='SHOP NOW'>
-                <img src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
+            <section class="pink-bg header-container">
+                <div class="header-title-container">
+                    <h1>Nitro Coffee</h1>
+                    <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                    <input class=button type=button onclick="location.href='./pages/menu.html'" value='SHOP NOW'>
+                </div>
+
+                <div class="header-image-container">
+                    <img class="header-image" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
+                </div>
             </section>
 
         </header>
-        <section class="grey-bg">
+        <section class="grey-bg centered">
 
-            <h2>Our Products</h2>
+            <h2 class="product-header">Our Products</h2>
 
             <div class="product-area">
-
                 <card class="product-card">
                     <div class="product-card-image-container">
                     <img class="product-card-image centered" src="./assets/images/coffeebeans.png" alt="Coffee Beans">
@@ -58,31 +62,32 @@
                     <h3>In-house Brew</h3>
                     <p class="product-pricing centered">$2.99</p>
                 </card>
-
             </div>
 
-            <input class=button type=button onclick="location.href='./pages/menu.html'" value='VIEW ALL'>
-        
+            <div class="button-container">
+            <input class="button product-button" type=button onclick="location.href='./pages/menu.html'" value='VIEW ALL'>
+            </div>
+
         </section>
         
-        <section>
+        <section class="discount-container">
             <p class="discount">Get 20% off your first order with the code: <span class="bold">FirstNitro</span></p>
         </section>
 
-        <footer class="pink-bg">
-            <div>
+        <footer class="pink-bg footer-area">
+            <div class="footer-block">
                 <h3>Address</h3>
-                <p>503 Broadway Penthouse</p>
-                <p>New York</p>
+                <p>503 Broadway Penthouse<br>
+                New York</p>
             </div>
 
-            <div>
+            <div class="footer-block">
                 <h3>Hours</h3>
-                <p><span class="bold">Monday - Friday:</span> 9am - 7pm</p>
-                <p><span class="bold">Saturday - Sunday:</span> 10am - 5pm</p>
+                <p><span class="bold">Monday - Friday:</span> 9am - 7pm<br>
+                <span class="bold">Saturday - Sunday:</span> 10am - 5pm</p>
             </div>
 
-            <div>
+            <div class="footer-block">
                 <h3>Social</h3>
                 <a href="https://facebook.com"><img class="icons" src="./assets/logos/Facebook-Icon.svg" alt="facebook"></a>
                 <a href="https://yelp.com"><img class="icons" src="./assets/logos/Yelp-Icon.svg" alt="yelp"></a>
