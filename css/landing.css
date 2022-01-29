@@ -8,6 +8,7 @@ h3 {
 p {
     font-size: 18px;
     padding-bottom: 20px;
+    color: #393939;
 }
 .header-container {
     width: 100%;
@@ -48,6 +49,11 @@ p {
     padding: 20px;
     box-sizing: border-box;
     font-size: 21px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: underline;
 }
 
 .product-button {
