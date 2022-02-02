@@ -48,6 +48,10 @@ li {
     padding: 20px;
 }
 
+.nav__heading--shop {
+    color: #5BACC3;
+}
+
 .nav__heading:hover {
     color: #5BACC3;
 }
