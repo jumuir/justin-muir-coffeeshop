@@ -9,21 +9,21 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
     padding: 20px 0;
     color: #393939;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
     padding: 20px 0 40px 0;
     color: #393939;
 }
 
 h3 {
-    font-size: 33px;
+    font-size: 2.063rem;
     font-weight: 300;
     color: #393939;
 }
@@ -31,7 +31,7 @@ h3 {
 li {
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 1.313rem;
 }
 
 .icons {
@@ -39,21 +39,16 @@ li {
     max-width: 120px;
 }
 
-.pricing {
-    color: #5BACC3;
-    padding: 20px 0;
-}
-
-.nav-text {
+.nav__heading {
     text-decoration: none;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 1.313rem;
     color:  #393939;
     padding: 20px;
 }
 
-.nav-text:hover {
+.nav__heading:hover {
     color: #5BACC3;
 }
 
@@ -61,11 +56,11 @@ nav * {
     display: inline;
 }
 
-.logo-pad {
+.nav__icon {
     padding: 20px 0 0 20px;
 }
 
-.nav-name {
+.nav__title {
     text-decoration: none;
     color:  #393939;
     padding-right: 20px;
@@ -75,6 +70,14 @@ nav * {
     text-align: center;
 }
 
-.bottom-pad {
+.pad-bottom {
     padding-bottom: 20px;
+}
+
+.pink-background {
+    background-color: #FFF0ED;
+}
+
+.grey-background {
+    background-color: #F7F7F7;
 }

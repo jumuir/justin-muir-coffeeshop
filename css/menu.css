@@ -1,14 +1,9 @@
-
 p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
-.container {
-    position: relative;
-}
-
-.title {
+.hero-container__title {
     background-color: #393939;
     color: white;
     min-width: 280px;
@@ -16,10 +11,11 @@ p {
     min-height: 180px;
     max-height: 200px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
+    
 }
 
-.background-image {
+.hero-container {
     background-image: url('../assets/images/coffee-circle.jpg');
     min-width: 100%;
     max-width: 100%;
@@ -41,7 +37,7 @@ p {
     box-sizing: border-box;
 }
 
-.sub-nav-text {
+.sub-nav__heading {
     text-decoration: none;
     color:white;
     text-transform: uppercase;
@@ -51,11 +47,11 @@ p {
     padding: 0 20px;
 }
 
-.sub-nav-text:hover {
+.sub-nav__heading:hover {
     color: #5bacc3;
 }
 
-.menu-description {
+.menu__description {
     font-style: italic;
     text-align: center;
     max-width: 50%;
@@ -70,4 +66,10 @@ p {
 .grey-card {
     background-color: #F7F7F7;
     padding-bottom: 20px;
+}
+
+.pricing {
+    color: #5BACC3;
+    padding: 20px 0
+    ;
 }
