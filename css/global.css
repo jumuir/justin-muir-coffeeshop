@@ -62,6 +62,7 @@ nav * {
 
 .nav__icon {
     padding: 20px 0 0 20px;
+    vertical-align: text-bottom;
 }
 
 .nav__title {
