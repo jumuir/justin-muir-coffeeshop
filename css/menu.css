@@ -4,15 +4,30 @@ p {
 }
 
 .hero-container__title {
-    background-color: #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     min-width: 280px;
     max-width: 300px;
     min-height: 180px;
     max-height: 200px;
-    text-align: center;
-    margin: auto;
-    
+    border: 5px solid #5BACC3;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.hero-container__title--background {
+    background-color: #393939;
+    min-width: 280px;
+    max-width: 300px;
+    min-height: 180px;
+    max-height: 200px;
+    position: relative;
+    box-sizing: border-box;
+    top: 20px;
+    left: 20px;
 }
 
 .hero-container {
@@ -23,6 +38,9 @@ p {
     max-height: 600px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub-nav {

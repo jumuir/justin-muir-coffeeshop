@@ -22,13 +22,13 @@ p {
 .header__title-container {
     display: inline-block;
     width: 30%;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 
 .header__image-container {
     text-align: center;
     display: inline-block;
-    margin-right: 10%;
+    margin-right: 8%;
 }
 
 .header-title {
@@ -40,27 +40,42 @@ p {
 }
 
 .button {
-    background-color: #5bacc3;
+    background: none;
     color: white;
-    border: none;
+    border: 2px solid #393939;
     min-width: 180px;
     max-width: 80%;
     padding: 20px;
     box-sizing: border-box;
     font-size: 21px;
     cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.button--background {
+    color: #5bacc3;
+    border: none;
+    background-color: #5bacc3;
+    min-width: 180px;
+    max-width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 21px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #5bacc3;
 }
 
 .button:hover {
     text-decoration: underline;
 }
 
-.button-container {
-    text-align: center;
-}
-
-.product-button {
-    margin: 20px auto 60px auto;
+.product-button__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 60px 0;
 }
 
 .product__header {
@@ -70,7 +85,8 @@ p {
 .product__card-area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 8%;
 }
 
 .product__card {
@@ -142,6 +158,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .footer__card {
@@ -151,7 +168,12 @@ p {
 }
 
 .footer__titles {
+    margin: 0;
     padding-bottom: 20px;
+}
+
+.footer__text {
+    margin: 0;
 }
 
 .bold {
@@ -173,7 +195,7 @@ p {
 
 .difference__content {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 8%;
     width: 35%;
 }
 
@@ -189,13 +211,47 @@ p {
 }
 
 .difference__image--container {
+    margin-right: 8%;
+}
+
+.difference__image {
     display: flex;
-    margin-right: 5%;
-    background-image: url('../assets/images/coldbrewbackground.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    min-width: 400px;
     align-items: center;
     justify-content: center;
+    z-index: 2;
+    height: 400px;
+    width: 400px;
+    border: 5px solid #5bacc3;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.difference__image--background {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    box-sizing: border-box;
+}
+
+.footer-image--left {
+    opacity: 25%;
+    width: 120px;
+    position: relative;
+    bottom: 60px;
+    right: 48vw;
+}
+
+.footer-image--right {
+    opacity: 25%;
+    width: 120px;
+    position: relative;
+    top: 60px;
+    left: 48vw;
+}
+
+.footer-image__container {
+    position: absolute;
 }

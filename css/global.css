@@ -58,7 +58,7 @@ li {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
     padding-bottom: 60px;
 }
 
