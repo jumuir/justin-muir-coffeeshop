@@ -55,6 +55,12 @@ li {
 .nav__heading:hover {
     color: #5BACC3;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 60px;
+}
 
 nav * {
     display: inline;

@@ -8,7 +8,11 @@ p {
 }
 
 .header-container {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .header__title-container>p {
@@ -16,17 +20,15 @@ p {
 }
 
 .header__title-container {
-    vertical-align: 200px;
     display: inline-block;
     width: 30%;
-    margin: 0 10% 0 10%;
+    margin-left: 5%;
 }
 
 .header__image-container {
-    width: 45%;
     text-align: center;
     display: inline-block;
-    margin: 40px 0;
+    margin-right: 10%;
 }
 
 .header-title {
@@ -137,13 +139,19 @@ p {
 }
 
 .footer-area {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer__card {
     text-align: left;
     display: inline-block;
-    margin: 40px;
+    margin: 80px 40px;
+}
+
+.footer__titles {
+    padding-bottom: 20px;
 }
 
 .bold {
@@ -153,4 +161,41 @@ p {
 .quantity {
     color: #909090;
     text-align: left;
+}
+
+.difference__area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+    align-items: center;
+}
+
+.difference__content {
+    display: inline-block;
+    margin-left: 5%;
+    width: 35%;
+}
+
+.difference__icons {
+    width: 50px;
+}
+
+.difference__icons--container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.difference__image--container {
+    display: flex;
+    margin-right: 5%;
+    background-image: url('../assets/images/coldbrewbackground.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
 }
