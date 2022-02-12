@@ -218,7 +218,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
     height: 400px;
     width: 400px;
     border: 5px solid #5bacc3;
