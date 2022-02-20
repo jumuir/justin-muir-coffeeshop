@@ -60,6 +60,7 @@ nav {
     justify-content: space-between;
     align-items: baseline;
     padding-bottom: 60px;
+    background-color: #FFF0ED;
 }
 
 nav * {
@@ -79,20 +80,4 @@ nav * {
 
 .nav__title--sizing {
     font-size: 3rem;
-}
-
-.centered {
-    text-align: center;
-}
-
-.pad-bottom {
-    padding-bottom: 20px;
-}
-
-.pink-background {
-    background-color: #FFF0ED;
-}
-
-.grey-background {
-    background-color: #F7F7F7;
 }

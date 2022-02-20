@@ -13,6 +13,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 40px;
+    background-color: #FFF0ED;
 }
 
 .header__title-container>p {
@@ -53,9 +54,8 @@ p {
     z-index: 1;
 }
 
-.button--background {
+.button__background {
     color: #5bacc3;
-    border: none;
     background-color: #5bacc3;
     min-width: 180px;
     max-width: 80%;
@@ -68,8 +68,8 @@ p {
     border: 2px solid #5bacc3;
 }
 
-.button:hover {
-    text-decoration: underline;
+.button:active {
+    transform: translate(5px, 5px);
 }
 
 .product-button__container {
@@ -112,6 +112,7 @@ p {
 
 .product__card--image {
     object-fit: cover;
+    text-align: center;
 }
 
 .product__card--top {
@@ -136,6 +137,7 @@ p {
     color: #5bacc3;
     font-size: 2.063rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .discount-container {
@@ -154,17 +156,32 @@ p {
     padding: 40px 0;
 }
 
+@keyframes flashing {
+    50% {
+        background-color: #5bacc3;
+    }
+}
+
+.discount--flashing {
+    animation-name: flashing;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 .footer-area {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    background-color: #FFF0ED;
 }
 
 .footer__card {
     text-align: left;
     display: inline-block;
     margin: 80px 40px;
+    z-index: 1;
 }
 
 .footer__titles {
@@ -214,6 +231,19 @@ p {
     margin-right: 8%;
 }
 
+@keyframes rotating-can {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.difference__image--container:hover .tilted-can {
+    animation-name: rotating-can;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 .difference__image {
     display: flex;
     align-items: center;
@@ -241,7 +271,7 @@ p {
     width: 120px;
     position: relative;
     bottom: 60px;
-    right: 48vw;
+    right: 44vw;
 }
 
 .footer-image--right {
@@ -249,9 +279,20 @@ p {
     width: 120px;
     position: relative;
     top: 60px;
-    left: 48vw;
+    left: 44vw;
 }
 
 .footer-image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product__area {
+    background-color: #f7f7f7;
+    text-align: center;
 }

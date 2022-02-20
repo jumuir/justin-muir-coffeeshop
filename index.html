@@ -12,7 +12,7 @@
     <body>
         <header>
 
-            <nav class="pink-background">
+            <nav>
                 <div>
                     <a href="index.html"><img class="icons nav__icon" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"/></a>
                     <a class="nav__title" href="index.html"><h3 class="nav__title--sizing">nitro</h3></a>
@@ -24,12 +24,12 @@
                 </div>
             </nav>
 
-            <section class="pink-background header-container">
+            <section class="header-container">
                 <div class="header__title-container">
                     <h1>Nitro Coffee</h1>
                     <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                     <input class=button type=button onclick="location.href='./pages/menu.html'" value='SHOP NOW'>
-                    <input class="button--background" type=button value='SHOP NOW'>
+                    <input class="button__background" type=button value='SHOP NOW'>
                 </div>
 
                 <div class="header__image-container">
@@ -38,21 +38,21 @@
             </section>
 
         </header>
-        <section class="grey-background centered">
+        <section class="product__area">
 
             <h2 class="product__header">Our Products</h2>
 
             <div class="product__card-area">
                 <div class="product__card">
                     <div class="product__card--top">
-                        <img class="product__card--image centered" src="./assets/images/coffeebeans.png" alt="bag of coffee beans">
+                        <img class="product__card--image" src="./assets/images/coffeebeans.png" alt="bag of coffee beans">
                     </div>
                     <div class="product__card--bottom">
                         <div>    
                             <h3>Coffee Beans</h3>
                             <p class="quantity">Pack of 3</p>
                         </div>
-                        <p class="product__pricing centered">$19</p>
+                        <p class="product__pricing">$19</p>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                             <h3>Cold Brew</h3>
                             <p class="quantity">1 can</p>
                         </div>
-                        <p class="product__pricing centered">$5</p>
+                        <p class="product__pricing">$5</p>
                     </div>
                 </div>
 
@@ -78,14 +78,14 @@
                             <h3>In-house Brew</h3>
                             <p class="quantity">1 cup</p>
                         </div>
-                        <p class="product__pricing centered">$3</p>
+                        <p class="product__pricing">$3</p>
                     </div>
                 </div>
             </div>
 
             <div class="product-button__container">
                 <input class="button" type=button onclick="location.href='./pages/menu.html'" value='VIEW ALL'>
-                <input class="button--background" type=button value='VIEW ALL'>
+                <input class="button__background" type=button value='VIEW ALL'>
             </div>
         </section>
 
@@ -100,24 +100,25 @@
                 </div>
                 <div>
                     <input class="button" type=button onclick="location.href='index.html'" value='LEARN MORE'>
-                    <input class="button--background" type=button value='LEARN MORE'>
+                    <input class="button__background" type=button value='LEARN MORE'>
                 </div>
             </div>
             <div class="difference__image--container">
                 <div class="difference__image">
-                    <img src="./assets/images/tiltedcan.png" alt="tilted can"/>
+                    <img class="tilted-can" src="./assets/images/tiltedcan.png" alt="tilted can"/>
                 </div>
                 <img class="difference__image--background" src="./assets/images/coldbrewbackground.png" alt="funky background"/>
             </div>
         </section>
         
         <section class="discount-container">
-            <p class="discount">Get 20% off your first order with the code: <span class="bold">FirstNitro</span></p>
+            <p class="discount discount--flashing">Get 20% off your first order with the code: <span class="bold">FirstNitro</span></p>
         </section>
 
-        <footer class="pink-background footer-area">
+        <footer class="footer-area">
             <div class="footer-image__container">
                 <img class="footer-image--left" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="three coffee beans">
+                <img class="footer-image--right" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="three coffee beans">
             </div>
 
             <div class="footer__card">
@@ -138,10 +139,7 @@
                 <a href="https://yelp.com"><img class="icons" src="./assets/logos/Yelp-Icon.svg" alt="yelp icon"></a>
                 <a href="https://instagram.com"><img class="icons" src="./assets/logos/Instagram-Icon.svg" alt="instagram icon"></a>
             </div>
-            
-            <div class="footer-image__container">
-                <img class="footer-image--right" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="three coffee beans">
-            </div>
+
         </footer>
         
     </body>
