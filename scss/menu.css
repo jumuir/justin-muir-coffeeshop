@@ -39,6 +39,17 @@ li {
   max-width: 120px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 60px;
+  background-color: #FFF0ED;
+}
+nav * {
+  display: inline;
+}
+
 .nav__heading {
   text-decoration: none;
   list-style-type: none;
@@ -47,38 +58,21 @@ li {
   color: #393939;
   padding: 20px;
 }
-
 .nav__heading--shop {
   color: #5BACC3;
 }
-
 .nav__heading:hover {
   color: #5BACC3;
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 60px;
-  background-color: #FFF0ED;
-}
-
-nav * {
-  display: inline;
-}
-
 .nav__icon {
   padding: 20px 0 0 20px;
   vertical-align: text-bottom;
 }
-
 .nav__title {
   text-decoration: none;
   color: #393939;
   padding-right: 20px;
 }
-
 .nav__title--sizing {
   font-size: 3rem;
 }
@@ -86,33 +80,6 @@ nav * {
 p {
   font-size: 1.125rem;
   font-weight: 400;
-}
-
-.hero-container__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  min-width: 280px;
-  max-width: 300px;
-  min-height: 180px;
-  max-height: 200px;
-  border: 5px solid #5BACC3;
-  position: absolute;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.hero-container__title--background {
-  background-color: #393939;
-  min-width: 280px;
-  max-width: 300px;
-  min-height: 180px;
-  max-height: 200px;
-  position: relative;
-  box-sizing: border-box;
-  top: 20px;
-  left: 20px;
 }
 
 .hero-container {
@@ -127,6 +94,31 @@ p {
   justify-content: center;
   align-items: center;
 }
+.hero-container__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-width: 280px;
+  max-width: 300px;
+  min-height: 180px;
+  max-height: 200px;
+  border: 5px solid #5BACC3;
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.hero-container__title--background {
+  background-color: #393939;
+  min-width: 280px;
+  max-width: 300px;
+  min-height: 180px;
+  max-height: 200px;
+  position: relative;
+  box-sizing: border-box;
+  top: 20px;
+  left: 20px;
+}
 
 .sub-nav {
   min-width: 100%;
@@ -140,19 +132,17 @@ p {
   box-sizing: border-box;
   justify-content: center;
 }
-
 .sub-nav__heading {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-size: 21px;
   width: 100%;
-  border-left: solid 4px #5bacc3;
+  border-left: solid 4px #5BACC3;
   padding: 0 20px;
 }
-
 .sub-nav__heading:hover {
-  color: #5bacc3;
+  color: #5BACC3;
 }
 
 .menu__description {

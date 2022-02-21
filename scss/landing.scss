@@ -1,12 +1,24 @@
 @use './partials/global' as *;
 
+@keyframes flashing {
+    50% {
+        background-color: $primary-colour;
+    }
+}
+
+@keyframes rotating-can {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .nav-link {
     font-size: 1.313rem;
 }
 
 p {
     font-size: 1.125rem;
-    color: #393939;
+    color: $secondary-colour;
 }
 
 .header-container {
@@ -15,7 +27,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 40px;
-    background-color: #FFF0ED;
+    background-color: $primary-bg;
 }
 
 .header__title-container>p {
@@ -34,18 +46,10 @@ p {
     margin-right: 8%;
 }
 
-.header-title {
-    padding: 30% 20%;
-}
-
-.header-image {
-    object-fit: contain;
-}
-
 .button {
     background: none;
     color: white;
-    border: 2px solid #393939;
+    border: 2px solid $secondary-colour;
     min-width: 180px;
     max-width: 80%;
     padding: 20px;
@@ -54,24 +58,24 @@ p {
     cursor: pointer;
     position: absolute;
     z-index: 1;
-}
+    
+    &:active {
+        transform: translate(5px, 5px);
+    }
 
-.button__background {
-    color: #5bacc3;
-    background-color: #5bacc3;
-    min-width: 180px;
-    max-width: 80%;
-    padding: 20px;
-    box-sizing: border-box;
-    font-size: 21px;
-    position: relative;
-    top: 5px;
-    left: 5px;
-    border: 2px solid #5bacc3;
-}
-
-.button:active {
-    transform: translate(5px, 5px);
+    &__background {
+        color: $primary-colour;
+        background-color: $primary-colour;
+        min-width: 180px;
+        max-width: 80%;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 21px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        border: 2px solid $primary-colour;
+    }
 }
 
 .product-button__container {
@@ -84,7 +88,7 @@ p {
     padding: 60px 0 20px 0;
 }
 
-.product__card-area {
+.product__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -106,37 +110,42 @@ p {
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
     align-content: stretch;
     justify-content: stretch;
+
+    &:hover {
+        box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.5);
+    }
+
+    &--image {
+        object-fit: cover;
+        text-align: center;
+    }
+
+    &--top {
+        padding: 20px;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &--bottom {
+        display: flex;
+        height: 40%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-bg;
+        padding: 0 20px;
+        border-radius: 0 0 10px 10px;
+    }
 }
 
-.product__card:hover {
-    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.5);
-}
-
-.product__card--image {
-    object-fit: cover;
+.product__area {
+    background-color: $secondary-bg;
     text-align: center;
 }
 
-.product__card--top {
-    padding: 20px;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-}
-
-.product__card--bottom {
-    display: flex;
-    height: 40%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFF0ED;
-    padding: 0 20px;
-    border-radius: 0 0 10px 10px;
-}
-
 .product__pricing {
-    color: #5bacc3;
+    color: $primary-colour;
     font-size: 2.063rem;
     font-weight: bold;
     text-align: center;
@@ -150,49 +159,43 @@ p {
     min-width: max-content;
     text-align: center;
     max-width: 90%;
-    background-color: #393939;
+    background-color: $secondary-colour;
     color: white;
     font-size: 45px;
     font-weight: 400;
     margin: 200px auto;
     padding: 40px 0;
-}
 
-@keyframes flashing {
-    50% {
-        background-color: #5bacc3;
+    &--flashing {
+        animation-name: flashing;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
 }
 
-.discount--flashing {
-    animation-name: flashing;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-.footer-area {
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    background-color: #FFF0ED;
-}
+    background-color: $primary-bg;
 
-.footer__card {
-    text-align: left;
-    display: inline-block;
-    margin: 80px 40px;
-    z-index: 1;
-}
+    &__card {
+        text-align: left;
+        display: inline-block;
+        margin: 80px 40px;
+        z-index: 1;
+    }
 
-.footer__titles {
-    margin: 0;
-    padding-bottom: 20px;
-}
+    &__titles {
+        margin: 0;
+        padding-bottom: 20px;
+    }
 
-.footer__text {
-    margin: 0;
+    &__text {
+        margin: 0;
+    }
 }
 
 .bold {
@@ -233,12 +236,6 @@ p {
     margin-right: 8%;
 }
 
-@keyframes rotating-can {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .difference__image--container:hover .tilted-can {
     animation-name: rotating-can;
     animation-duration: 2s;
@@ -253,7 +250,7 @@ p {
     z-index: 1;
     height: 400px;
     width: 400px;
-    border: 5px solid #5bacc3;
+    border: 5px solid $primary-colour;
     position: absolute;
     z-index: 1;
     box-sizing: border-box;
@@ -268,23 +265,7 @@ p {
     box-sizing: border-box;
 }
 
-.footer-image--left {
-    opacity: 25%;
-    width: 120px;
-    position: relative;
-    bottom: 60px;
-    right: 44vw;
-}
-
-.footer-image--right {
-    opacity: 25%;
-    width: 120px;
-    position: relative;
-    top: 60px;
-    left: 44vw;
-}
-
-.footer-image__container {
+.footer-images {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,9 +273,20 @@ p {
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
 
-.product__area {
-    background-color: #f7f7f7;
-    text-align: center;
+    &--left {
+        opacity: 25%;
+        width: 120px;
+        position: relative;
+        bottom: 60px;
+        right: 44vw;
+    }
+
+    &--right {
+        opacity: 25%;
+        width: 120px;
+        position: relative;
+        top: 60px;
+        left: 44vw;
+    }
 }
