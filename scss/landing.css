@@ -115,17 +115,14 @@ p {
   padding-bottom: 40px;
   background-color: #FFF0ED;
 }
-
-.header__title-container > p {
-  padding-bottom: 40px;
-}
-
 .header__title-container {
   display: inline-block;
   width: 30%;
   margin-left: 8%;
 }
-
+.header__title-container p {
+  padding-bottom: 40px;
+}
 .header__image-container {
   text-align: center;
   display: inline-block;
@@ -167,18 +164,15 @@ p {
   justify-content: center;
   padding: 20px 0 60px 0;
 }
-
 .product__header {
   padding: 60px 0 20px 0;
 }
-
 .product__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 8%;
 }
-
 .product__card {
   background-color: white;
   display: flex;
@@ -219,20 +213,18 @@ p {
   padding: 0 20px;
   border-radius: 0 0 10px 10px;
 }
-
+.product__card--bottom .quantity {
+  color: #909090;
+  text-align: left;
+}
 .product__area {
   background-color: #F7F7F7;
   text-align: center;
 }
-
 .product__pricing {
   color: #5BACC3;
   font-size: 2.063rem;
   font-weight: bold;
-  text-align: center;
-}
-
-.discount-container {
   text-align: center;
 }
 
@@ -248,6 +240,9 @@ p {
   font-weight: 400;
   margin: 200px auto;
   padding: 40px 0;
+}
+.discount-container {
+  text-align: center;
 }
 .discount--flashing {
   -webkit-animation-name: flashing;
@@ -280,78 +275,6 @@ p {
 .footer__text {
   margin: 0;
 }
-
-.bold {
-  font-weight: 700;
-}
-
-.quantity {
-  color: #909090;
-  text-align: left;
-}
-
-.difference__area {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 80px;
-  align-items: center;
-}
-
-.difference__content {
-  display: inline-block;
-  margin-left: 8%;
-  width: 35%;
-}
-
-.difference__icons {
-  width: 50px;
-}
-
-.difference__icons--container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.difference__image--container {
-  margin-right: 8%;
-}
-
-.difference__image--container:hover .tilted-can {
-  -webkit-animation-name: rotating-can;
-          animation-name: rotating-can;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.difference__image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  height: 400px;
-  width: 400px;
-  border: 5px solid #5BACC3;
-  position: absolute;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.difference__image--background {
-  height: 400px;
-  width: 400px;
-  position: relative;
-  top: 20px;
-  left: 20px;
-  box-sizing: border-box;
-}
-
 .footer-images {
   display: flex;
   justify-content: center;
@@ -374,4 +297,63 @@ p {
   position: relative;
   top: 60px;
   left: calc(50vw - 80px);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.difference__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  align-items: center;
+}
+.difference__content {
+  display: inline-block;
+  margin-left: 8%;
+  width: 35%;
+}
+.difference__icons {
+  width: 50px;
+}
+.difference__icons--container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.difference__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 400px;
+  width: 400px;
+  border: 5px solid #5BACC3;
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.difference__image--background {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  box-sizing: border-box;
+}
+.difference__image--container {
+  margin-right: 8%;
+}
+.difference__image--container:hover .tilted-can {
+  -webkit-animation-name: rotating-can;
+          animation-name: rotating-can;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }/*# sourceMappingURL=landing.css.map */
