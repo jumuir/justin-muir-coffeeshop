@@ -366,12 +366,12 @@ p {
   width: 120px;
   position: relative;
   bottom: 60px;
-  right: 44vw;
+  right: calc(50vw - 80px);
 }
 .footer-images--right {
   opacity: 25%;
   width: 120px;
   position: relative;
   top: 60px;
-  left: 44vw;
+  left: calc(50vw - 80px);
 }/*# sourceMappingURL=landing.css.map */
